@@ -8,6 +8,7 @@
 }
 
 #obstacle {
+  background-color: green;
   position: absolute;
   width: 50px;
   height: 500px;
@@ -15,14 +16,6 @@
   animation: moveBlock 2s infinite linear;
 }
 
-#block {
-  width: 50px;
-  height: 500px;
-  background-color: black;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 #hole {
   width: 50px;
@@ -46,5 +39,11 @@
 @keyframes moveBlock {
   0% { left: 400px; }
   100% { left: -50px; }
+}
+
+#score {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
 }
 
