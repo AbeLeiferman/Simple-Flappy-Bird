@@ -135,8 +135,5 @@ function resetGame() {
 // Start the game loop
 resetHolePosition(); // Initialize hole position
 
-        // Reset the flag if the bird is no longer passing
-        hasPassed = false;
-    }
-}
+
 
