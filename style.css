@@ -26,14 +26,29 @@
 }
 
 #bird {
-  width: 20px;
-  height: 20px;
-  background-color:red;
-  border-radius: 50%;
+  width: 30px; /* Adjusted width */
+  height: 20px; /* Adjusted height */
+  background-color: red;
   position: absolute;
   top: 250px;
   left: 100px;
+  border-radius: 50%; /* Rounded shape */
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Bird-like shape */
 }
+
+/* Optional: Add a wing effect */
+#bird::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: darkred;
+  position: absolute;
+  top: 5px; /* Adjust as needed */
+  left: 30px; /* Adjust as needed */
+  border-radius: 50%; /* Make it circular */
+  transform: rotate(-45deg);
+}
+
 
 /* Animation for moving the obstacle from right to left */
 @keyframes moveBlock {
@@ -46,4 +61,5 @@
   margin-top: 10px;
   font-size: 25px;
 }
+
 
